@@ -31,7 +31,7 @@ Verifique se a regex acima casa com o texto na variável `text`, mostrando o
 resultado no console. O resultado deve ser:
 "[ '10', '50' ]"
 */
-var text = '10 anos.\n50 discos vendidos.\nE nem 10% dos meus amigos o conhece.';
+let text = '10 anos.\n50 discos vendidos.\nE nem 10% dos meus amigos o conhece.';
 console.log( '\nNúmeros no início da linha do texto:\n' + text, '\n' );
 // ?
 
@@ -52,7 +52,7 @@ mostrando o resultado no console.
 O resultado deve ser:
 "[ '12', '6' ]"
 */
-var otherText = 'Silvio Santos, nome artístico de Senor Abravanel (Rio de Janeiro, 12\n de dezembro de 1930), é um apresentador de televisão e empresário brasileiro.\n Proprietário do Grupo Silvio Santos, que inclui empresas como a Liderança\n Capitalização (administradora da loteria Tele Sena), a Jequiti Cosméticos e o\n Sistema Brasileiro de Televisão (mais conhecido como SBT), Silvio Santos possui\n um patrimônio avaliado em aproximadamente 6\n bilhões de reais.';
+let otherText = 'Silvio Santos, nome artístico de Senor Abravanel (Rio de Janeiro, 12\n de dezembro de 1930), é um apresentador de televisão e empresário brasileiro.\n Proprietário do Grupo Silvio Santos, que inclui empresas como a Liderança\n Capitalização (administradora da loteria Tele Sena), a Jequiti Cosméticos e o\n Sistema Brasileiro de Televisão (mais conhecido como SBT), Silvio Santos possui\n um patrimônio avaliado em aproximadamente 6\n bilhões de reais.';
 console.log( '\nNúmeros no final da linha:\n\n', otherText, '\n' );
 // ?
 
@@ -79,6 +79,6 @@ abaixo;
 qualquer classe que for testada. Os dados passados no exercício são somente
 para exemplificar.
 */
-var markup = '<main>\n  <div class="container">\n    <span class="text date"></span>\n    <p class=\'excerpt\'></p>\n  </div>\n</main>';
+let markup = '<main>\n  <div class="container">\n    <span class="text date"></span>\n    <p class=\'excerpt\'></p>\n  </div>\n</main>';
 console.log( '\nQuais classes CSS existem na marcação abaixo?\n\n', markup, '\n' );
 // ?

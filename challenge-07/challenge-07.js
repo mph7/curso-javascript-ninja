@@ -1,7 +1,7 @@
 /*
 Crie um array com 5 items (tipos variados).
 */
-arr = [1, 1.2, "teste", { sim: true }, [1, 2]];
+let arr = [1, 1.2, "teste", { sim: true }, [1, 2]];
 
 /*
 Crie uma função chamada `addItem`, que irá adicionar itens no array criado.

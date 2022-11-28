@@ -129,11 +129,11 @@
   - "Nem todos os estados tem mais de 7 letras!"
   */
 	console.log("\nTodos os estados de `brasil` tem mais de 7 letras?");
-	maisDe7 = brasil.every(function (item) {
+	let maisDe7 = brasil.every(function (item) {
 		return item.length > 7;
 	});
 
-	console.log(every ? "Sim, todos os estados tem mais de 7 letras!" : "Nem todos os estados tem mais de 7 letras!");
+	console.log(maisDe7 ? "Sim, todos os estados tem mais de 7 letras!" : "Nem todos os estados tem mais de 7 letras!");
 
 	/*
   Percorra o array `brasil` e verifique se o Ceará está incluído, atribuindo o
@@ -144,7 +144,7 @@
   - "Ceará não foi incluído :"
   */
 	console.log("\nCeará está incluído em `brasil`?");
-	cearaIn = brasil.some(function (item) {
+	let cearaIn = brasil.some(function (item) {
 		return item === "Ceará";
 	});
 	console.log(cearaIn ? "Ceará está incluído!" : "Ceará não foi incluído :");
@@ -168,7 +168,7 @@
     Filtre o array criado acima, retornando somente os estados que tiverem
     ID par. Atribua o valor à uma variável chamada `filter`.
     */
-	filter = newBrasil.filter(function (item) {
+	let filter = newBrasil.filter(function (item) {
 		return item.id % 2 === 0;
 	});
 

@@ -3,7 +3,7 @@ Declare uma variável chamada `sum` e atribua a ela uma função chamada
 `calculateSum`. A função deve receber dois parâmetros e retornar a soma
 desses parâmetros.
 */
-var sum = function calculateSum(num1, num2) {
+let sum = function calculateSum(num1, num2) {
   return num1 + num2;
 };
 
@@ -91,12 +91,12 @@ function calculator(operacao) {
 Declare uma variável chamada `sum`, que receberá a função acima, passando como
 parâmetro o operador de soma.
 */
-var sum = calculator("+");
+let sumCalc = calculator("+");
 
 /*
 Agora `sum` é uma função. Mostre no console a soma de dois números, usando ela.
 */
-console.log(sum(3, 5));
+console.log(sumCalc(3, 5));
 
 /*
 Agora, declare algumas variáveis com os nomes `subtraction`, `multiplication`,

@@ -109,9 +109,9 @@
 	console.log("\nFazer replace dos textos das tags:");
 	let marcacao = "<h1>Título da página</h1><p>Este é um parágrafo</p><footer>Rodapé</footer>";
 	function replaceTag(text) {
-		return text.replace(/(<\w+>)([^<>]+)(<\/[\w]+>)/gi, function (regex, open, inside, close) {
+		return text.replace(/(<\w+>)([^<>]+)(<\/\w+>)/gi, function (regex, open, inside, close) {
 			return (
-				open + 'O texto dentro da tag "' + open.match(/<([\w]+)>/)[1] + '" é "' + inside + '"' + close + "\n"
+				open + 'O texto dentro da tag "' + open.match(/<(\w+)>/)[1] + '" é "' + inside + '"' + close + "\n"
 			);
 		});
 	}

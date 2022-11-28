@@ -1,0 +1,6 @@
+{
+	"sonarlint.connectedMode.project": {
+		"connectionId": "mph7VSCode",
+		"projectKey": "mph7_curso-javascript-ninja"
+	}
+}

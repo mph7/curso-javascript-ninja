@@ -18,7 +18,7 @@
 	console.log("As letras do seu nome:");
 	let name = "Matheus";
 	for (let index in name) {
-		console.log(name[index], "é a", ++index + "ª letra do meu nome.");
+		console.log(name[index], "é a", Number(index) + 1 + "ª letra do meu nome.");
 	}
 
 	/*

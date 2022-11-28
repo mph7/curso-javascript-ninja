@@ -80,31 +80,34 @@
     no formato abaixo:
     "[PROPRIEDADE]: [VALOR]"
     */
-	// for (let index = 0; index < books.length; index++) {
-	//     console.log(books[index] + ': ' + books);
-	// }
-
+	
 	for (let i in books) {
 		for (let j in Object.keys(i)) {
 			console.log(j + ": " + books[i][j]);
 		}
 	}
 
-    define([
-        'require',
-        'dependency'
-    ], function(require, factory) {
-        'use strict';
+/*
+Crie um array chamado `myName`. Cada item desse array deve ser uma letra do
+seu nome. Adicione seu nome completo no array.
+*/
+// ?
+console.log( '\nMeu nome é:' );
 
-    });
-    for (const key in object) {
-        if (Object.hasOwnProperty.call(object, key)) {
-            const element = object[key];
+/*
+Juntando todos os itens do array, mostre no console seu nome.
+*/
+// ?
 
-        }
-    }
+console.log( '\nMeu nome invertido é:' );
 
-    AnalyserNode
-setTimeout(() => {
-    
-}, timeout);
+/*
+Ainda usando o objeto acima, mostre no console seu nome invertido.
+*/
+// ?
+
+console.log( '\nAgora em ordem alfabética:' );
+/*
+Mostre todos os itens do array acima, odenados alfabéticamente.
+*/
+// ?
