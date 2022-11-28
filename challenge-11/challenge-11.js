@@ -8,10 +8,10 @@
     'Entrou ao menos uma vez!'
     Qual loop você deve usar para que essa mensagem seja mostrada no console?
     */
-	let once = false;
+
 	do {
 		console.log("Entrou ao menos uma vez!");
-	} while (once === true);
+	} while (false === true);
 
 	/*
     Crie um objeto chamado `person`, que receba as seguintes propriedades:
