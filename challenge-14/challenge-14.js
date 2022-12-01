@@ -95,7 +95,9 @@
     e atribuirá o seu nome invertido (usando o array criado acima).
     */
 	console.log("\nInversed Name:");
-	let inversedName = name.reverse().join("");
+
+	let inversedName = name.join("").split("").reverse().join("");
+
 	console.log(inversedName);
 
 	/*
