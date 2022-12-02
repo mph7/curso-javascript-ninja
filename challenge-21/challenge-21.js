@@ -24,24 +24,21 @@
 
 	let timeout;
 
-	function timer() {
+	$buttonStart.addEventListener("click", timer, false);
+	$buttonStop.addEventListener("click", stopTimer, false);
+	$buttonReset.addEventListener("click", resetTimer, false);
+
+	function startTimer() {
 		$timer.value++;
 		timeout = setTimeout(timer, 1000);
 	}
 
-	$buttonStart.addEventListener("click", timer, false);
-	$buttonStop.addEventListener(
-		"click",
-		function () {
-			clearTimeout(timeout);
-		},
-		false,
-	);
-	$buttonReset.addEventListener(
-		"click",
-		function () {
-			$timer.value = 0;
-		},
-		false,
-	);
+	function stopTimer() {
+		clearTimeout(timeout);
+	}
+
+	function resetTimer() {
+		$timer.value = 0;
+		stopTimer();
+	}
 })(window, document);
