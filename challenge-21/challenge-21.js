@@ -24,13 +24,13 @@
 
 	let timeout;
 
-	$buttonStart.addEventListener("click", timer, false);
+	$buttonStart.addEventListener("click", startTimer, false);
 	$buttonStop.addEventListener("click", stopTimer, false);
 	$buttonReset.addEventListener("click", resetTimer, false);
 
 	function startTimer() {
 		$timer.value++;
-		timeout = setTimeout(timer, 1000);
+		timeout = setTimeout(startTimer, 1000);
 	}
 
 	function stopTimer() {
