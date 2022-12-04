@@ -35,7 +35,7 @@
         */
 	function sum() {
 		console.log(arguments);
-		return Array.prototype.reduce.call(arguments[0], function (x, y) {
+		return Array.prototype.reduce.call(arguments, function (x, y) {
 			return x + y;
 		});
 	}
@@ -45,9 +45,9 @@
         diferentes, com quantidades variáveis de parâmetros passados.
         */
 	console.log("\nSomar alguns números:");
-	console.log(sum([1, 5, 10, 20]));
-	console.log(sum([1, 15, 4]));
-	console.log(sum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]));
+	console.log(sum(1, 5, 10, 20));
+	console.log(sum(1, 15, 4));
+	console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20));
 
 	/*
         Declare uma variável chamada `userEntry`, que irá receber alguns valores
@@ -90,5 +90,9 @@
         números desse array e mostre o resultado no console.
         */
 	console.log("\nSomar números entrados pelo usuário:");
-	console.log(sum(numbers));
+	console.log(sum.apply(sum, numbers));
 })();
+
+
+
+
